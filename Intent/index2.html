@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Writing your first semantic markup</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        width: 940px;
+        margin: 0 auto;
+      }
+      .social_icons {
+        background: url('images/sprites/social_icons.png') no-repeat;
+        width: 30px;
+        height: 31px;
+      }
+      .facebook {
+        background-position: -38px 0;
+      }
+      .twitter {
+        background-position: -76px 0;
+      }
+      ul {
+        margin-top: 10px;
+      }
+      li {
+        list-style: none;
+        position: relative;
+        width: 260px;
+        display: inline-block;
+        margin-right: 10px;
+        padding-left: 40px;
+      }
+      p {
+        line-height: 22px;
+      }
+      h5 {
+        margin-bottom: 10px;
+      }
+      span {
+        display: block;
+        width: 30px;
+        height: 31px;
+        position: absolute;
+        margin-left: -40px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- THIS IS THE HEADER SECTION -->
+    <header>
+      <ul>
+        <!-- rss -->
+        <li>
+          <span class="social_icons"></span>
+          <h5>RSS Stream</h5>
+          <p>
+            Integer eros nunc in ultricies et, etiam nunc nisi, elementum mattis nec nunc, montes. 
+            Elit montes integer pellentesque! Elementum a, dignissim pulvinar ac nascetur?
+          </p>
+        </li>
+        <!-- end rss -->
+        
+        <!-- facebook -->
+        <li>
+          <span class="social_icons facebook"></span>
+          <h5>Facebook</h5>
+          <p>
+            Integer eros nunc in ultricies et, etiam nunc nisi, elementum mattis nec nunc, montes. 
+            Elit montes integer pellentesque! Elementum a, dignissim pulvinar ac nascetur?
+          </p>
+        </li>
+        <!-- end facebook -->
+        
+        <!-- twitter -->
+        <li>
+          <span class="social_icons twitter"></span>
+          <h5>Twitter</h5>
+          <p>
+            Integer eros nunc in ultricies et, etiam nunc nisi, elementum mattis nec nunc, montes. 
+            Elit montes integer pellentesque! Elementum a, dignissim pulvinar ac nascetur?
+          </p>
+        </li>
+        <!-- end twitter -->
+        
+      </ul>
+    </header>
+    <!-- THIS IS THE END OF THE HEADER SECTION -->
+  </body>
+</html>

@@ -1,92 +1,190 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Writing your first semantic markup</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-      }
-      body {
-        width: 940px;
-        margin: 0 auto;
-      }
-      .social_icons {
-        background: url('images/sprites/social_icons.png') no-repeat;
-        width: 30px;
-        height: 31px;
-      }
-      .facebook {
-        background-position: -38px 0;
-      }
-      .twitter {
-        background-position: -76px 0;
-      }
-      ul {
-        margin-top: 10px;
-      }
-      li {
-        list-style: none;
-        position: relative;
-        width: 260px;
-        display: inline-block;
-        margin-right: 10px;
-        padding-left: 40px;
-      }
-      p {
-        line-height: 22px;
-      }
-      h5 {
-        margin-bottom: 10px;
-      }
-      span {
-        display: block;
-        width: 30px;
-        height: 31px;
-        position: absolute;
-        margin-left: -40px;
-      }
-    </style>
-  </head>
-  <body>
-    <!-- THIS IS THE HEADER SECTION -->
-    <header>
-      <ul>
-        <!-- rss -->
-        <li>
-          <span class="social_icons"></span>
-          <h5>RSS Stream</h5>
-          <p>
-            Integer eros nunc in ultricies et, etiam nunc nisi, elementum mattis nec nunc, montes. 
-            Elit montes integer pellentesque! Elementum a, dignissim pulvinar ac nascetur?
-          </p>
-        </li>
-        <!-- end rss -->
-        
-        <!-- facebook -->
-        <li>
-          <span class="social_icons facebook"></span>
-          <h5>Facebook</h5>
-          <p>
-            Integer eros nunc in ultricies et, etiam nunc nisi, elementum mattis nec nunc, montes. 
-            Elit montes integer pellentesque! Elementum a, dignissim pulvinar ac nascetur?
-          </p>
-        </li>
-        <!-- end facebook -->
-        
-        <!-- twitter -->
-        <li>
-          <span class="social_icons twitter"></span>
-          <h5>Twitter</h5>
-          <p>
-            Integer eros nunc in ultricies et, etiam nunc nisi, elementum mattis nec nunc, montes. 
-            Elit montes integer pellentesque! Elementum a, dignissim pulvinar ac nascetur?
-          </p>
-        </li>
-        <!-- end twitter -->
-        
-      </ul>
-    </header>
-    <!-- THIS IS THE END OF THE HEADER SECTION -->
-  </body>
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Intent Portfolio website</title>
+</head>
+<body>
+
+	<!-- HEADER SECTION -->
+	<header>
+		<ul class="social_icons">
+			<li>Lorem.</li>
+			<li>Ad.</li>
+			<li>Libero?</li>
+			<li>Modi.</li>
+		</ul>
+		<h1 class="logo">Intent Logo</h1>
+		<nav>
+			<ul class="main_nav">
+				<li>Lorem.</li>
+				<li>Ducimus!</li>
+				<li>Possimus.</li>
+				<li>Assumenda.</li>
+			</ul>
+		</nav>
+	</header>
+	<!--  END HEADER SECTION -->	
+
+
+	<!-- MAIN CONTENT -->
+ 		
+
+		<!-- FEATURED SECTION -->
+		<section id="featured">
+			<button class="carousel_nav carousel_left">left</button>
+			<button class="carousel_nav carousel_right">right</button>
+			<figure>
+				<img src="" title="title of the image" alt="this the description of the image">
+				<figcaption>
+					this is what happened on .......
+				</figcaption>
+			</figure>
+		</section>
+		<ul class="carousel">
+			<li>
+				<img src="" alt="" title="image 1">
+			</li>
+			<li>
+				<img src="" alt="" title="image 2">
+			</li>
+			<li>
+				<img src="" alt="" title="image 3">
+			</li>
+			<li>
+				<img src="" alt="" title="image 4">
+			</li>
+			<li>
+				<img src="" alt="" title="image 5">
+			</li>
+			<li>
+				<img src="" alt="" title="image 6">
+			</li>
+			<li><img src="" alt="" title="image 7"></li>
+			<li><img src="" alt="" title="image 8"></li>
+			<li><img src="" alt="" title="image 9"></li>
+			<li><img src="" alt="" title="image 10"></li>
+		</ul>
+		<!-- FEATURED SECTION -->
+	
+
+
+		<!-- SERVICES SECTION -->
+		<section id="services">
+			<ul>
+				<li class="service awesome">
+					<h3>Lorem ipsum.</h3>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, officia, architecto, aspernatur eveniet atque beatae nemo earum aliquid doloribus consequuntur quas veritatis ipsum necessitatibus illo corporis culpa expedita sapiente quis?
+					</p>
+				</li>
+				<li class="service modern">
+					<h3>Eius, molestias!</h3>
+					<p>
+						Quaerat, pariatur, possimus, quis autem ullam consequatur sunt quisquam ab consectetur enim architecto eveniet ipsam odio quos eos laudantium harum unde non dolor aut maxime et atque saepe distinctio corporis!
+					</p>
+				</li>
+				<li class="service custom">
+					<h3>Animi, veritatis.</h3>
+					<p>
+						Labore, voluptatum, quia beatae sit perferendis fugit ullam voluptatibus recusandae incidunt ad expedita sint accusantium consectetur optio tenetur similique accusamus dolorum earum doloremque vel ipsa ratione corporis sunt eaque placeat.
+					</p>
+				</li>
+			</ul>
+			<footer>
+				<h3>
+					make an <span class="highlight">impression</span> that shines
+				</h3>
+			</footer>
+		</section>
+		<!-- END SERVICES SECTION -->
+
+
+
+		<!-- SHOWCASE SECTION -->
+		<section id="showcase">
+			<ul class="showcase_filters">
+				<li>Lorem.</li>
+				<li>Eos.</li>
+				<li>Vitae.</li>
+				<li>Perferendis?</li>
+				<li>Est?</li>
+			</ul>
+			<ul class="showcase_thumbs">
+				<li><img src="" alt="" title="showcase 1"></li>
+				<li><img src="" alt="" title="showcase 2"></li>
+				<li><img src="" alt="" title="showcase 3"></li>
+				<li><img src="" alt="" title="showcase 4"></li>
+				<li><img src="" alt="" title="showcase 5"></li>
+				<li><img src="" alt="" title="showcase 6"></li>
+				<li><img src="" alt="" title="showcase 7"></li>
+				<li><img src="" alt="" title="showcase 8"></li>
+			</ul>
+		</section>
+		<!-- END SHOWCASE SECTION -->
+
+	<!-- END MAIN CONTENT -->
+
+
+	
+	<!-- MAIN SITE FOOTER -->
+	<footer id="main_footer">
+		<ul class="footer_list">
+			<li>
+				<h3>Lorem ipsum.</h3>
+				<ul>
+					<li>
+						<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+					</li>
+					<li>
+						<h4>Minus, officia eos harum rem ea at culpa!</h4>
+					</li>
+					<li>
+						<h4>Aut, voluptatibus commodi corporis nostrum adipisci excepturi possimus!</h4>
+					</li>
+					<li>
+						<h4>Natus, tempore omnis ipsa doloribus aspernatur at voluptas.</h4>
+					</li>
+				</ul>
+			</li>
+
+
+			<li>
+				<h3>Natus, quia!</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, qui, quisquam, fugiat nihil sapiente ipsum dolorem voluptatem repellat corrupti a odit officiis sint quaerat libero porro! Aut, molestiae ex quo!</p>
+				<p>Dicta, aliquid, eius sapiente ab veniam deleniti vel eaque recusandae vero aut cum suscipit repellendus sit dolorum tempora temporibus ratione tempore perspiciatis nemo a ullam voluptatem sint doloremque voluptatibus totam!</p>
+			</li>
+
+
+			<li>
+				<h3>Quas, similique?</h3>
+				<ul class="social_icons footer_icons">
+					<li><img src="" alt="" class="icons 1"></li>
+					<li><img src="" alt="" class="icons 2"></li>
+					<li><img src="" alt="" class="icons 3"></li>
+					<li><img src="" alt="" class="icons 4"></li>
+					<li><img src="" alt="" class="icons 5"></li>
+					<li><img src="" alt="" class="icons 6"></li>
+					<li><img src="" alt="" class="icons 7"></li>
+					<li><img src="" alt="" class="icons 8"></li>
+					<li><img src="" alt="" class="icons 9"></li>
+					<li><img src="" alt="" class="icons 10"></li>
+					<li><img src="" alt="" class="icons 11"></li>
+					<li><img src="" alt="" class="icons 12"></li>
+					<li><img src="" alt="" class="icons 13"></li>
+					<li><img src="" alt="" class="icons 14"></li>
+					<li><img src="" alt="" class="icons 15"></li>
+					<li><img src="" alt="" class="icons 16"></li>
+					<li><img src="" alt="" class="icons 17"></li>
+					<li><img src="" alt="" class="icons 18"></li>
+					<li><img src="" alt="" class="icons 19"></li>
+					<li><img src="" alt="" class="icons 20"></li>
+				</ul>
+			</li>
+		</ul>
+	</footer>
+	<!-- MAIN SITE FOOTER -->
+
+
+</body>
 </html>
