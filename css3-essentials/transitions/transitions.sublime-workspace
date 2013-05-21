@@ -1,0 +1,475 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"prop",
+				"prop2"
+			],
+			[
+				"flex",
+				"flexCountry"
+			],
+			[
+				"stat",
+				"staticPromo"
+			],
+			[
+				"che",
+				"checkCountry"
+			],
+			[
+				"fle",
+				"flexCountries"
+			],
+			[
+				"country",
+				"countryField"
+			],
+			[
+				"fl",
+				"fl:l	float:left"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 109.0,
+		"selected_items":
+		[
+			[
+				"prefix",
+				"Preferences: Prefixr Key Bindings – Default"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"jque",
+				"Snippet: jQuery.when"
+			],
+			[
+				"jqueryiswi",
+				"Snippet: jQuery.isWindow"
+			],
+			[
+				"jq",
+				"Snippet: jQuery AJAX call"
+			],
+			[
+				"Task",
+				"Tasks: New document"
+			],
+			[
+				"jqu",
+				"Snippet: jQuery.inArray"
+			],
+			[
+				"package inst",
+				"Package Control: Install Package"
+			],
+			[
+				"ssc",
+				"Set Syntax: CSS"
+			],
+			[
+				"ssht",
+				"Set Syntax: HTML5"
+			],
+			[
+				"xik",
+				"Create Xiki Buffer"
+			],
+			[
+				"packa is",
+				"Package Control: Install Package"
+			],
+			[
+				"foo",
+				"Preferences: Package Control Settings – User"
+			],
+			[
+				"sspl",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"ssh",
+				"Set Syntax: HTML5"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"sssa",
+				"Set Syntax: Sass"
+			],
+			[
+				"Package Inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Packag",
+				"Package Control: Install Package"
+			],
+			[
+				"sscs",
+				"Set Syntax: CSS"
+			],
+			[
+				"sst",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"sas",
+				"Set Syntax: HTML (ASP)"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package",
+				"Package Control: Remove Package"
+			],
+			[
+				"sass",
+				"Set Syntax: Sass"
+			],
+			[
+				"prefixr",
+				"Snippet: jQuery Mobile: Fixed footer"
+			],
+			[
+				"Packa",
+				"Package Control: Install Package"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"ht",
+				"Set Syntax: HTML5"
+			],
+			[
+				"cre",
+				"Create Xiki Buffer"
+			],
+			[
+				"Pac",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 146.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/ngoma/Library/Application Support/Sublime Text 2/Packages/PlainTasks/Default (OSX).sublime-keymap",
+		"/Users/ngoma/Code/aeo/test.js",
+		"/Users/ngoma/Code/aeo/modules/AerieWeb/build/ear/temp/j2ee-apps/aerie.war/checkout/giftcards/giftCardBuilder.jsp",
+		"/Users/ngoma/Code/aeo/modules/AerieWeb/build/ear/temp/j2ee-apps/aerie.war/checkout/billing/billingAddressAnonModal.jsp",
+		"/Users/ngoma/Code/aeo/modules/Foundation/build/classes/aeo/resources/GlobalUserErrorMessages.properties",
+		"/Users/ngoma/Code/aeo/modules/Foundation/src/aeo/commerce/gifts/AeoGiftWrapFormHandler.java",
+		"/Users/ngoma/Code/aeo/modules/AerieWeb/build/ear/temp/j2ee-apps/aerie.war/checkout/gift_wrap.jsp",
+		"/Users/ngoma/Code/aeo/modules/AerieWeb/build/ear/temp/j2ee-apps/aerie.war/checkout/billing/billingAddressAnon.jsp",
+		"/Users/ngoma/Code/aeo/modules/Csr/j2ee-apps/csr.war/testjsps/customer_tab.jsp",
+		"/Users/ngoma/Code/aeo/modules/WebCommon/j2ee-apps/webcommon.war/javascript/checkout/checkout.js",
+		"/Users/ngoma/Code/aeo/modules/WebCommon/j2ee-apps/webcommon.war/javascript/staticPromo.js",
+		"/Users/ngoma/Code/aeo/modules/WebCommon/j2ee-apps/webcommon.war/global/common/pushdowns/pushdown.jspf",
+		"/Users/ngoma/Code/aeo/modules/WebCommon/j2ee-apps/webcommon.war/global/common/pushdowns/pushdownintl.jspf",
+		"/Users/ngoma/Code/aeo/Gruntfile.js",
+		"/Users/ngoma/Code/aeo/modules/Csr/j2ee-apps/csr.war/javascript/asap.js",
+		"/Users/ngoma/Code/aeo/modules/WebCommon/j2ee-apps/webcommon.war/checkout/gift_wrap.jsp",
+		"/Users/ngoma/Code/aeo/modules/WebCommon/j2ee-apps/webcommon.war/popups/gift_wrap/gift_wrap_popup.jsp",
+		"/Users/ngoma/Code/aeo/manifests/webcommon/javascript/bagbar.json",
+		"/Users/ngoma/Code/aeo/modules/WebCommon/j2ee-apps/webcommon.war/javascript/bagbar/bagBarTemplates.js",
+		"/Users/ngoma/Code/aeo/manifests/resolves/checkout.js",
+		"/Users/ngoma/Code/aeo/modules/AerieWeb/build/ear/temp/j2ee-apps/aerie.war/global/common/pushdowns/pushdownintl.jspf",
+		"/Users/ngoma/.floobits/share/msgs.floobits.log",
+		"/Users/ngoma/Library/Application Support/Sublime Text 2/Packages/User/Package Control.sublime-settings",
+		"/Users/ngoma/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/ngoma/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Applications/XAMPP/xamppfiles/htdocs/html5-css3-for-designers/Intent/index2.html",
+		"/tmp/subl stdin Oot8v2.txt",
+		"/Applications/XAMPP/xamppfiles/htdocs/html5-css3-for-designers/Intent/index.html",
+		"/Users/ngoma/Code/aeo/csr_html/escalationSearchResults.html",
+		"/Users/ngoma/Library/Application Support/Sublime Text 2/Packages/Prefixr/Default (OSX).sublime-keymap",
+		"/Users/ngoma/Library/Caches/TemporaryItems/Outlook Temp/SublimeLinter.sublime-settings"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"return false",
+			"validatorBase",
+			"giftwrap",
+			"public static DataValidatorConstant",
+			"assignGiftWrapInstructions",
+			"GiftWrapFormHandler",
+			"enableReceiptBox",
+			"assignGiftWrapInstructions",
+			"gwSave",
+			"modalHeader",
+			"\n",
+			"baseValidator",
+			"DataValidatorConstant",
+			"static DataValidatorConstant",
+			"DataValidatorConstant",
+			"static DataValidatorConstant",
+			"DataValidatorConstant",
+			"limFunc",
+			"#MESSAGE",
+			"#message",
+			"enableReceiptBox",
+			"aeGiftwrap",
+			"giftwrap",
+			"crosssells",
+			"crosssellscopy",
+			"more looks to love",
+			"GW_HANDL_INSTR",
+			"200 ch",
+			"aeGiftWrap",
+			"enableReceiptBox",
+			"gwtextarea",
+			"PROPERTY_GIFTWRAP_HANDLING_INSTRUCTIONS",
+			"GW_HANDL_INSTR",
+			"The message should be 200 characters or less and sho",
+			"gwTextarea",
+			"messageLimitFunction",
+			"GiftWrapDroplet",
+			"asap=",
+			"asap:",
+			"asap",
+			"receiptTip",
+			"giftWrapWrapper",
+			"flexcou",
+			"flexshipp",
+			"flexshiping",
+			"flex",
+			"flexs",
+			"leadingMessage",
+			"class=\"inputLabelHolder fullField\"",
+			"name=\"country",
+			"Country, APO/FPO",
+			"<input type=\"hidden\" name=\"country\"",
+			"hello",
+			"twitter",
+			"social_top",
+			"twitter",
+			"social_top",
+			"font_size",
+			"10px",
+			"sass",
+			"/\n",
+			"sh",
+			"short",
+			"sublimelinter",
+			"box",
+			"floats",
+			"SublimeLinter.sublime-settings"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 35.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"checkoutva",
+				"modules/WebCommon/j2ee-apps/webcommon.war/javascript/validator/opts/checkoutValidator.js"
+			],
+			[
+				"checkout.js",
+				"manifests/webcommon/javascript/checkout.json"
+			],
+			[
+				"datav",
+				"modules/Foundation/src/aeo/util/DataValidator.java"
+			],
+			[
+				"basevalida",
+				"modules/WebCommon/j2ee-apps/webcommon.war/javascript/validator/opts/baseValidator.js"
+			],
+			[
+				"giftwrapf",
+				"modules/Foundation/src/aeo/commerce/gifts/AeoGiftWrapFormHandler.java"
+			],
+			[
+				"basevali",
+				"modules/WebCommon/j2ee-apps/webcommon.war/javascript/validator/opts/baseValidator.js"
+			],
+			[
+				"datavalidatorc",
+				"modules/Foundation/src/aeo/util/DataValidatorConstant.java"
+			],
+			[
+				"datavalida",
+				"modules/Foundation/src/aeo/util/DataValidator.java"
+			],
+			[
+				"checkout_ht",
+				"modules/WebCommon/j2ee-apps/webcommon.war/checkout/checkout_htmljax.jsp"
+			],
+			[
+				"bagbarte",
+				"modules/WebCommon/j2ee-apps/webcommon.war/javascript/bagbar/bagBarTemplates.js"
+			],
+			[
+				"bag",
+				"manifests/webcommon/javascript/bagbar.json"
+			],
+			[
+				"gift_wrap.js",
+				"modules/WebCommon/j2ee-apps/webcommon.war/popups/gift_wrap/gift_wrap_popup.jsp"
+			],
+			[
+				"gift_wrap",
+				"modules/WebCommon/j2ee-apps/webcommon.war/checkout/gift_wrap.jsp"
+			],
+			[
+				"asap",
+				"modules/Csr/j2ee-apps/csr.war/javascript/asap.js"
+			],
+			[
+				"grun",
+				"Gruntfile.js"
+			],
+			[
+				"pushdown",
+				"modules/WebCommon/j2ee-apps/webcommon.war/global/common/pushdowns/pushdownintl.jspf"
+			],
+			[
+				"staticpro",
+				"modules/WebCommon/j2ee-apps/webcommon.war/javascript/staticPromo.js"
+			],
+			[
+				"checkout",
+				"modules/WebCommon/j2ee-apps/webcommon.war/javascript/checkout/checkout.js"
+			],
+			[
+				"ind",
+				"Intent/index2.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true
+}

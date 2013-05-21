@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flex training</title>
+  <style>
+    body {
+      /* container display should be set to flex */
+      display: flex;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      /* flex direction can be row or column*/
+      -webkit-flex-direction: row; 
+      -moz-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+    }
+    body > * {
+      padding: 40px;
+    }
+    /* put the ratio of each flex child and the ordering */
+    aside.side_one {
+      /* flex stands for the ratio of the child box*/
+      flex: 4;
+      -webkit-flex: 4;
+      -moz-flex: 4;
+      /* order stands for the number in the sequence of children*/
+      -webkit-order: 1;
+      order: 1;
+      background-color: #9cc4e4;
+    }
+    section  {
+      -webkit-flex: 4;
+      flex: 4;
+      -webkit-order: 0;
+      order: 0;
+      background-color: #e9f2f9;
+    }
+    aside.side_two {
+      /* flex stands for the ratio of the child box*/
+      -webkit-flex: 2;
+      flex: 2;
+      /* order stands for the number in the sequence of children*/
+      -webkit-order: 2;
+      order: 2;
+      background-color: #3a89c9;
+    }
+    /*  ipad breakpoint */
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+     } 
+    /*  media query breakpoint 
+    @media screen and (max-width: 768px) {
+      aside.side_one {
+         -webkit-order: 0;
+         order: 0;
+      }
+      aside.side_two {
+         -webkit-order: 1;
+         order: 1;
+      }
+      section {
+         -webkit-order: 2;
+         order: 2;
+      }
+      body {
+        /* flex direction can be row or column*
+      -webkit-flex-direction: column; 
+      -moz-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      }
+      */
+    }
+  </style>
+</head>
+<body>
+  <aside class="side_one">
+    <!-- i want a list with 5 items  a title inside that is clickable 
+    ul>(li>a[href="#"]>h2>lorem4)*5 -->
+    <ul>
+      <li><a href="#">
+          <h2>Lorem ipsum dolor sit.</h2>
+        </a></li>
+      <li><a href="#">
+          <h2>Inventore, eius harum doloribus!</h2>
+        </a></li>
+      <li><a href="#">
+          <h2>Necessitatibus, maxime perferendis magnam.</h2>
+        </a></li>
+      <li><a href="#">
+          <h2>At repellendus nemo facilis!</h2>
+        </a></li>
+      <li><a href="#">
+          <h2>Illum, debitis sunt harum.</h2>
+        </a></li>
+    </ul>
+  </aside>
+  <section>
+    <!-- h1{This is the main section}+(p>lorem)*3 -->
+    <h1>This is the main section</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, molestias, minima voluptate harum a nulla at dolore iusto nemo odio perspiciatis eius aliquam vel commodi assumenda magni alias rem deleniti.</p>
+    <p>Magni, doloremque, natus perferendis aspernatur voluptatibus distinctio eveniet alias repudiandae quod velit nihil numquam cum ipsum quisquam qui corrupti veniam! Illum, consequuntur ullam odit vero molestiae voluptatibus reprehenderit maiores id.</p>
+    <p>Adipisci, consequuntur rerum mollitia nam fugiat pariatur possimus perspiciatis beatae temporibus quibusdam dolorum necessitatibus quisquam ea in iure iusto explicabo iste. Soluta, natus quod magni cum in modi quidem tempora.</p>
+  </section>
+  <aside class="side_two">
+    <h2>this is sidebar 2</h2>
+  </aside>
+</body>
+</html>

@@ -1,0 +1,95 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+$titleColor: #333;
+$bordercolor: #ccc;
+
+/**
+ * you can pass in comma separated properties
+ * example @include transition(all 0.5s ease)
+ * or multiples @include transition(width 0.5s ease-in, top 0.3s ease-out 0.5s)
+ */
+
+@mixin box-sizing($boxmodel) {
+  -webkit-box-sizing: $boxmodel;
+  -moz-box-sizing: $boxmodel;
+  box-sizing: $boxmodel;
+}
+
+@mixin transition($props) {
+  -webkit-transition: $props;
+  -moz-transition: $props;
+  -ms-transition: $props;
+  -o-transition: $props;
+  transition: $props; 
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius; 
+}
+
+*, 
+*:before, 
+*:after {
+  @include box-sizing(border-box);
+}
+section {
+  margin: 20px;
+}
+h1 {
+  margin-bottom: 20px;
+  font-size: 2em;
+  font-weight: bold;
+}
+ul {
+  border: 2px solid $bordercolor;
+  @include border-radius(16px);
+}
+
+li {
+  a {
+    display: block;
+    padding: 16px 8px;
+    background-color: #EEE;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $titleColor;
+    font-weight: bold;
+    border-top: 2px solid $bordercolor;
+    &:hover + div.content {
+      height: 200px;
+      max-height: 200px;
+    }
+  } 
+  &:first-child a {
+    border-top: none;
+    @include border-radius(16px 16px 0px 0px);
+  } 
+  &:last-child a {
+    @include border-radius(0px 0px 16px 16px);
+  }
+  &:last-child a:hover {
+    @include border-radius(0px);
+  }  
+}
+
+div.content {
+  height: 0px;
+  overflow: hidden;
+  @include transition(all 0.5s ease 0.1s);
+  &:hover {
+    height: 200px;
+    max-height: 200px;
+  }
+  > p {
+    padding: 20px;
+    border-top: 2px solid $bordercolor;
+    line-height: 24px;
+  }
+}

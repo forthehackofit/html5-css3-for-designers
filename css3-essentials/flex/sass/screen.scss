@@ -1,0 +1,56 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+$paletteOne: rgb(156,196,228);
+$paletteTwo: rgb(233,242,249);
+$paletteThree: rgb(58,137,201);
+
+@mixin display-flex($direction) {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  -webkit-flex-direction: $direction;
+  -moz-flex-direction: $direction;
+  flex-direction: $direction;
+}
+
+@mixin flex($ratio, $order) {
+  @if $ratio {
+    -webkit-flex: $ratio;
+    -moz-flex: $ratio;
+    flex: $ratio;
+  }  
+  @else {
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    flex: 1;
+  }  
+  @if $order {
+    -webkit-order: $order;
+    -moz-order: $order;
+    order: $order;
+  }  
+}
+
+@import "compass/reset";
+body {
+  width: 100%;
+  margin: 0 auto;
+  @include display-flex(row);
+  .flex {
+    padding: 40px;
+  }
+}
+aside.side_one {
+  @include flex(2, 1);
+  background-color: $paletteOne;
+}
+section {
+  @include flex(6, 0);
+  background-color: $paletteTwo;
+}
+aside.side_two {
+  @include flex(2, 2);
+  background-color: $paletteThree;
+}

@@ -1,0 +1,65 @@
+$slideWidth: 600px;
+$slideHeight: 900px;
+$slideCount: 7;
+$totalWidth: $slideCount * $slideWidth;
+
+
+#slideshow {
+  width: $slideWidth;
+  height: $slideHeight;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+div.slidereel {
+  position: absolute;
+  width: $totalWidth;
+  // animation: name duration timing-function delay iteration-count direction
+  
+  figure {
+    float: left;
+    width: $slideWidth;
+    padding: 0;
+    margin: 0;
+    -webkit-animation: slideshow 35s linear 5s infinite ;
+    -moz-animation: slideshow 5s linear 5s infinite;
+    -o-animation: slideshow 5s linear 5s infinite;
+    animation: slideshow 5s linear 5s infinite;
+  }
+}
+
+@-webkit-keyframes slideshow {
+ // 1st 
+ 0% {
+  -webkit-transform: translateX(0px);
+ }
+ // 2nd
+ // 14.25% {
+ //  -webkit-transform: translateX(-($slideCount - 1) * $slideWidth);
+ // }
+ // // 3rd
+ // 28.50% {
+ //  -webkit-transform: translateX(-($slideCount - 2) * $slideWidth);
+ // }
+ // // 4th
+ // 42.75% {
+ //  -webkit-transform: translateX(-($slideCount - 3) * $slideWidth);
+ // }
+ // // 5th
+ // 57% {
+ //  -webkit-transform: translateX(-($slideCount - 4) * $slideWidth);
+ // }
+ // // 6th
+ // 71.25% {
+ //  -webkit-transform: translateX(-($slideCount - 5) * $slideWidth);
+ // }
+ // // 7th
+ // 85.50% {
+ //  -webkit-transform: translateX(-($slideCount - 6) * $slideWidth);
+ // }
+ 100% {
+  -webkit-transform: translateX(-($slideCount - 1) * $slideWidth);
+  // -webkit-transform: -($slideCount - 1) * $slideWidth;
+ }
+}

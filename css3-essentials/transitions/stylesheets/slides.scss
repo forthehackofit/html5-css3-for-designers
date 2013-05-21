@@ -1,0 +1,10 @@
+$slideWidth: 600px;
+$slideHeight: 900px;
+
+
+#slideshow {
+  width: $slideWidth;
+  height: $slideHeight;
+  position: relative;
+  margin: 0 auto;
+}
