@@ -3,8 +3,85 @@
 <head>
   <meta charset="UTF-8">
   <title>Flex training</title>
+  <link rel="stylesheet" href="">
   <style>
-    body {
+    /* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+    *,
+    *:before,
+    *:after {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+    #container, tr, header, nav > ul {
       /* container display should be set to flex */
       display: flex;
       display: -webkit-flex;
@@ -16,25 +93,59 @@
       -ms-flex-direction: row;
       flex-direction: row;
     }
-    body > * {
+    #container > * {
       padding: 40px;
+    }
+    .logo {
+      flex: 2;
+      -webkit-flex: 2;
+      -moz-flex: 2;
+      padding: 20px;
+    }
+    nav {
+      flex: 8;
+      -webkit-flex: 8;
+      -moz-flex: 8;
+      background-color: #ccc;
+      
+    }
+    nav ul li{
+      flex: 1;
+      -webkit-flex: 1;
+      -moz-flex: 1;
+      padding: 20px 10px;
+      text-align: center;
+    }
+    nav ul li:hover {
+      background-color: #000;
+      color: #fff;
+    }
+    td {
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+    body > * {
+      
+    }
+    header {
+      padding: 0;
     }
     /* put the ratio of each flex child and the ordering */
     aside.side_one {
       /* flex stands for the ratio of the child box*/
-      flex: 4;
-      -webkit-flex: 4;
-      -moz-flex: 4;
+      flex: 2;
+      -webkit-flex: 2;
+      -moz-flex: 2;
       /* order stands for the number in the sequence of children*/
-      -webkit-order: 1;
-      order: 1;
+      -webkit-order: 0;
+      order: 0;
       background-color: #9cc4e4;
     }
     section  {
-      -webkit-flex: 4;
-      flex: 4;
-      -webkit-order: 0;
-      order: 0;
+      -webkit-flex: 6;
+      flex: 6;
+      -webkit-order: 1;
+      order: 1;
       background-color: #e9f2f9;
     }
     aside.side_two {
@@ -49,62 +160,107 @@
     /*  ipad breakpoint */
     @media screen and (min-width: 768px) and (max-width: 1024px) {
      } 
-    /*  media query breakpoint 
+    /*  media query breakpoint */
     @media screen and (max-width: 768px) {
       aside.side_one {
-         -webkit-order: 0;
-         order: 0;
+         -webkit-order: 2;
+         order: 2;
+         border-top: 2px solid #000;
       }
       aside.side_two {
          -webkit-order: 1;
          order: 1;
+         text-align: center;
+         border-top: 2px solid #000;
       }
       section {
-         -webkit-order: 2;
-         order: 2;
+         -webkit-order: 0;
+         order: 0;
       }
-      body {
-        /* flex direction can be row or column*
+      #container, tr, header, nav  {
+        /* flex direction can be row or column*/
       -webkit-flex-direction: column; 
       -moz-flex-direction: column;
       -ms-flex-direction: column;
       flex-direction: column;
       }
-      */
+      .logo {
+        text-align: center;
+        border-bottom: 2px solid #000;
+      }
+      nav {
+        border-bottom: 2px solid #000;
+      }
     }
   </style>
 </head>
 <body>
-  <aside class="side_one">
-    <!-- i want a list with 5 items  a title inside that is clickable 
-    ul>(li>a[href="#"]>h2>lorem4)*5 -->
-    <ul>
-      <li><a href="#">
-          <h2>Lorem ipsum dolor sit.</h2>
-        </a></li>
-      <li><a href="#">
-          <h2>Inventore, eius harum doloribus!</h2>
-        </a></li>
-      <li><a href="#">
-          <h2>Necessitatibus, maxime perferendis magnam.</h2>
-        </a></li>
-      <li><a href="#">
-          <h2>At repellendus nemo facilis!</h2>
-        </a></li>
-      <li><a href="#">
-          <h2>Illum, debitis sunt harum.</h2>
-        </a></li>
-    </ul>
-  </aside>
-  <section>
-    <!-- h1{This is the main section}+(p>lorem)*3 -->
-    <h1>This is the main section</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, molestias, minima voluptate harum a nulla at dolore iusto nemo odio perspiciatis eius aliquam vel commodi assumenda magni alias rem deleniti.</p>
-    <p>Magni, doloremque, natus perferendis aspernatur voluptatibus distinctio eveniet alias repudiandae quod velit nihil numquam cum ipsum quisquam qui corrupti veniam! Illum, consequuntur ullam odit vero molestiae voluptatibus reprehenderit maiores id.</p>
-    <p>Adipisci, consequuntur rerum mollitia nam fugiat pariatur possimus perspiciatis beatae temporibus quibusdam dolorum necessitatibus quisquam ea in iure iusto explicabo iste. Soluta, natus quod magni cum in modi quidem tempora.</p>
-  </section>
-  <aside class="side_two">
-    <h2>this is sidebar 2</h2>
-  </aside>
+  <header>
+    <h1 class="logo">Flexponsive</h1>
+    <nav>
+      <ul>
+        <li>main_1</li>
+        <li>main_2</li>
+        <li>main_3</li>
+        <li>main_4</li>
+        <li>main_5</li>
+      </ul>
+    </nav>
+  </header>
+  <div id="container">
+    <aside class="side_one">
+      <!-- i want a list with 5 items  a title inside that is clickable 
+      ul>(li>a[href="#"]>h2>lorem4)*5 -->
+      <ul>
+        <li><a href="#">
+            <h2>Lorem ipsum dolor sit.</h2>
+          </a></li>
+        <li><a href="#">
+            <h2>Inventore, eius harum doloribus!</h2>
+          </a></li>
+        <li><a href="#">
+            <h2>Necessitatibus, maxime perferendis magnam.</h2>
+          </a></li>
+        <li><a href="#">
+            <h2>At repellendus nemo facilis!</h2>
+          </a></li>
+        <li><a href="#">
+            <h2>Illum, debitis sunt harum.</h2>
+          </a></li>
+      </ul>
+    </aside>
+    <section>
+      <table>
+        <tr>
+          <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, odio, sunt, provident cupiditate tenetur sit libero incidunt omnis nesciunt velit sed nisi eligendi error expedita aliquid consectetur ea in ex.</td>
+          <td>Ea, ad doloremque nulla aperiam magni facilis veritatis odit inventore laboriosam quos harum ex impedit nam a fuga adipisci dolore temporibus suscipit asperiores possimus eveniet voluptatum culpa dolor aspernatur quas.</td>
+          <td>Omnis, possimus magnam repellendus facilis dicta odio harum a suscipit eaque molestiae aspernatur ducimus consequuntur sint laborum totam impedit illo distinctio culpa labore maiores illum commodi in similique ipsa nisi.</td>
+          <td>Tenetur, minus eos amet suscipit quo autem illum asperiores quae perspiciatis nam rerum explicabo pariatur hic maiores numquam nemo similique necessitatibus aut. Ullam, fugiat, asperiores nam voluptas iure reprehenderit nihil.</td>
+          <td>Eligendi, odit, provident, sint inventore delectus repellat atque nam hic expedita necessitatibus ullam natus eaque molestiae possimus ea doloremque omnis libero nostrum et error ipsam molestias quam distinctio assumenda eveniet.</td>
+        </tr>
+      </table>
+    
+       <table>
+         <tr>
+           <th>Lorem ipsum dolor sit amet.</th>
+           <th>Eius magnam blanditiis vitae beatae.</th>
+           <th>Alias, saepe enim temporibus numquam.</th>
+         </tr>
+         <tr>
+           <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, nam, expedita, ab, quasi neque modi ad suscipit aperiam nulla alias unde fuga quaerat ea minima facilis aspernatur porro repellat tempore?</td>
+           <td>Nesciunt, a, esse, ab, quas maiores sequi corporis pariatur omnis commodi unde vitae odit veniam reiciendis corrupti repellat doloribus consectetur iusto tempora nihil quae. Itaque, veniam esse eius vel magni.</td>
+           <td>Consectetur, incidunt atque reprehenderit accusantium tenetur quam voluptatibus modi inventore voluptas expedita ipsam laboriosam quibusdam minus amet ad molestias suscipit? Iusto, ipsa, hic repellendus repudiandae odit maiores tempora reprehenderit molestias!</td>
+         </tr>
+       </table>
+      <!-- h1{This is the main section}+(p>lorem)*3 -->
+      <h1>This is the main section</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, molestias, minima voluptate harum a nulla at dolore iusto nemo odio perspiciatis eius aliquam vel commodi assumenda magni alias rem deleniti.</p>
+      <p>Magni, doloremque, natus perferendis aspernatur voluptatibus distinctio eveniet alias repudiandae quod velit nihil numquam cum ipsum quisquam qui corrupti veniam! Illum, consequuntur ullam odit vero molestiae voluptatibus reprehenderit maiores id.</p>
+      <p>Adipisci, consequuntur rerum mollitia nam fugiat pariatur possimus perspiciatis beatae temporibus quibusdam dolorum necessitatibus quisquam ea in iure iusto explicabo iste. Soluta, natus quod magni cum in modi quidem tempora.</p>
+    </section>
+    <aside class="side_two">
+      <h2>this is sidebar 2</h2>
+    </aside>
+  </div>
 </body>
 </html>

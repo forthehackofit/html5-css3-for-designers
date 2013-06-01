@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Modernizr Intro</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    input[type=text] {
+      display: block;
+      width: 300px;
+      height: 30px;
+      padding: 5px;
+      border: 1px solid #ccc;
+      margin: 0 0 20px 20px;
+    }
+    .placeholder {
+      color: #aaa;
+    }
+  </style>
+  <script src="javascripts/vendors/Modernizr.js"></script>
+</head>
+<body>
+ <form action="" id="phform">
+   <input type="text" placeholder="" value="this is placeholder 1" name="input1" 
+ />
+   <input type="text" placeholder="" value="this is placeholder 2" name="input2" 
+/>
+   <input type="text" placeholder="" value="this is placeholder 3" name="input3" 
+/>
+   <input type="text" placeholder="" value="this is placeholder 4" name="input4" 
+/>
+   <input type="text" placeholder="" value="this is placeholder 5" name="input5" 
+/>
+   <input type="submit" value="Submit" name="submit" />
+ </form>
+<script src="http://code.jquery.com/jquery-1.10.0.min.js"></script> 
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script>
+  window.onload = function(e) {
+    // if(Modernizr.input.placeholder) {
+    //   $pinputs.each(function () {
+    //       $(this)
+    //       .attr('placeholder', $(this).attr('value'))
+    //       .attr('value', "");
+    //   });
+    //   $thisForm.on("submit", function(evt) {
+    //     evt.preventDefault();
+    //     sanitizeForm();
+    //   });
+    // }
+    // else {
+    //   placeholder();
+    // }
+
+    Modernizr.load(
+      {
+        test: Modernizr.input.placeholder,
+        yep: 'javascripts/starter.js',
+        nope: 'javascripts/placeholder.js',
+        both: 'javascripts/sanitizeform.js'
+      }
+    );
+}    
+</script>  
+</body>
+</html>
